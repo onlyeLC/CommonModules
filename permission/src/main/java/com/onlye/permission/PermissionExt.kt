@@ -1,15 +1,21 @@
 package com.onlye.permission
 
 import android.Manifest
-import android.content.Context
-import android.graphics.Color
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
 import com.permissionx.guolindev.PermissionX
 
-class Permission {
+/**
+ * @author: onlye
+ * @description:权限请求工具类,统一处理各种权限的动态请求,向下兼容各个版本
+ * @date:2023/5/25 1:41
+ * @version:
+ * @email: 986289773@qq.com
+ */
+class PermissionExt {
 
 }
+
 
 /**
  * 请求定位权限
