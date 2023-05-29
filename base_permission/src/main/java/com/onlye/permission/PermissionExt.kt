@@ -1,7 +1,8 @@
-package com.onlye.core.permission
+package com.onlye.permission
 
 import android.Manifest
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import com.permissionx.guolindev.PermissionX
 
@@ -40,4 +41,8 @@ fun FragmentActivity.requestLocation() {
                 Toast.makeText(this, "The following permissions are denied：$deniedList", Toast.LENGTH_SHORT).show()
             }
         }
+}
+
+fun Fragment.requestLocation() {
+
 }

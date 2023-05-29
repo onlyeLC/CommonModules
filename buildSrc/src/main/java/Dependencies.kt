@@ -30,7 +30,6 @@ object Libs {
     const val junit = "junit:junit:${Version.junit_version}"
     const val androidxJunit = "androidx.test.ext:junit:${Version.androidx_junit_version}"
     const val espressoCore = "androidx.test.espresso:espresso-core:${Version.espresso_core_version}"
-
     /**
      * 网络SDK:Retrofit、okhttp、
      */

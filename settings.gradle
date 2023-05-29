@@ -14,6 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Utils"
 include ':app'
-include ':base_network'
-include ':core'
 include ':module_main'
+include ':core'
+include ':base_network'
+include ':base_permission'

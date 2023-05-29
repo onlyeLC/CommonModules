@@ -2,8 +2,7 @@ package com.onlye.module_main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-//import com.onlye.network.RetrofitManager
-
+import com.onlye.permission.requestLocation
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +17,8 @@ class MainActivity : AppCompatActivity() {
 //        },{
 //            Toast.makeText(this, "开启定位失败", Toast.LENGTH_SHORT).show()
 //        })
+
+        requestLocation()
 
 //        val create = RetrofitManager.create<ApiService>()
     }
