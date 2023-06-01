@@ -2,6 +2,7 @@ package com.onlye.module_main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.onlye.network.RetrofitManager
 import com.onlye.permission.requestLocation
 
 class MainActivity : AppCompatActivity() {
@@ -18,9 +19,14 @@ class MainActivity : AppCompatActivity() {
 //            Toast.makeText(this, "开启定位失败", Toast.LENGTH_SHORT).show()
 //        })
 
-        requestLocation()
+//        requestLocation()
 
-//        val create = RetrofitManager.create<ApiService>()
+        val create = RetrofitManager.create<ApiService>()
+
+        TestOkHttp().apply {
+            init()
+            request()
+        }
     }
 
 }
