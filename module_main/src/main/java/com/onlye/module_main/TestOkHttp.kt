@@ -41,7 +41,7 @@ class TestOkHttp {
             }
         })
 
-        val response = call.execute()
+//        val response = call.execute()
     }
 
     fun run1() {

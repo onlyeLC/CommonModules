@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.onlye.core"
+    namespace = "com.onlye.base_img"
     compileSdk = ProjectConfig.COMPILE_SDK
 
     defaultConfig {
@@ -34,17 +34,7 @@ android {
 }
 
 dependencies {
-    //android 基础api
-    api(Libs.androidxCore)
-    api(Libs.androidxAppcompat)
-    api(Libs.material)
-    api(Libs.constraintlayout)
-    testApi(Libs.junit)
-    androidTestApi(Libs.androidxJunit)
-    androidTestApi(Libs.espressoCore)
-
-    //基础组件
-    api(project(mapOf("path" to ":base_permission")))
-    api(project(mapOf("path" to ":base_network")))
-    api(project(mapOf("path" to ":base_img")))
+    api(Libs.glide)
+    // TODO: 使用KSP代替annotationProcessor
+    annotationProcessor(Libs.glide_compiler)
 }

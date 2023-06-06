@@ -7,16 +7,19 @@
  */
 
 object Version {
-    const val retrofit_version = "2.9.0"
-    const val okhttp_version = "4.11.0"
-    const val permissionx_version = "1.7.1"
     const val androidx_core_version = "1.9.0"
     const val androidx_appcompat_version = "1.6.1"
     const val material_version = "1.7.0"
     const val constraintlayout_version = "2.1.4"
+
     const val junit_version = "4.13.2"
     const val androidx_junit_version = "1.1.3"
     const val espresso_core_version = "3.4.0"
+
+    const val retrofit_version = "2.9.0"
+    const val okhttp_version = "4.11.0"
+    const val permissionx_version = "1.7.1"
+    const val glide_version = "4.11.0"
 }
 
 object Libs {
@@ -40,6 +43,11 @@ object Libs {
      *权限框架SDK
      */
     const val permissionX = "com.guolindev.permissionx:permissionx:${Version.permissionx_version}"
+    /**
+     * 图片加载框架
+     */
+    const val glide = "com.github.bumptech.glide:glide:${Version.glide_version}"
+    const val glide_compiler = "com.github.bumptech.glide:compiler:${Version.glide_version}"
 }
 
 
