@@ -12,12 +12,12 @@ import okhttp3.HttpUrl
  * @email: 986289773@qq.com
  */
 class ComCookieJar: CookieJar {
+    var mCookies = listOf<Cookie>()
     override fun loadForRequest(url: HttpUrl): List<Cookie> {
-        val listOf = listOf<Cookie>()
-        return listOf
+        return mCookies
     }
 
     override fun saveFromResponse(url: HttpUrl, cookies: List<Cookie>) {
-
+        mCookies+cookies
     }
 }

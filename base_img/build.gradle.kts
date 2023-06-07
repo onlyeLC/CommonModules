@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
 }
 
 android {
@@ -35,6 +36,6 @@ android {
 
 dependencies {
     api(Libs.glide)
-    // TODO: 使用KSP代替annotationProcessor
-    annotationProcessor(Libs.glide_compiler)
+    // TODO: 使用KSP代替kapt
+    kapt(Libs.glide_compiler)
 }

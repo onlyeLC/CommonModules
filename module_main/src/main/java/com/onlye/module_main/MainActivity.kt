@@ -2,8 +2,7 @@ package com.onlye.module_main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.onlye.network.RetrofitManager
-import com.onlye.permission.requestLocation
+import com.onlye.core.network.RetrofitManager
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

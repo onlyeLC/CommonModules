@@ -18,7 +18,7 @@ private const val BASE_URL = "https://www.wanandroid.com/"
 
 abstract class BaseRetrofitManager {
 
-    private val okHttpClient: OkHttpClient by lazy {
+    private val okHttpClient: OkHttpClient by lazy{
         val builder = OkHttpClient.Builder()
             .callTimeout(TIME_OUT_LENGTH, TimeUnit.SECONDS)
             .connectTimeout(TIME_OUT_LENGTH, TimeUnit.SECONDS)
