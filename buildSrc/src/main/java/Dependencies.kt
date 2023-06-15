@@ -20,6 +20,7 @@ object Version {
     const val okhttp_version = "4.11.0"
     const val permissionx_version = "1.7.1"
     const val glide_version = "4.11.0"
+    const val immersionbar_version = "3.2.2"
 }
 
 object Libs {
@@ -48,6 +49,14 @@ object Libs {
      */
     const val glide = "com.github.bumptech.glide:glide:${Version.glide_version}"
     const val glide_compiler = "com.github.bumptech.glide:compiler:${Version.glide_version}"
+
+    /**
+     * 沉浸式控制
+     */
+    // 基础依赖包，必须要依赖
+    const val immersionbar = "com.geyifeng.immersionbar:immersionbar:${Version.immersionbar_version}"
+    // kotlin扩展（可选）
+    const val immersionbar_ktx = "com.geyifeng.immersionbar:immersionbar-ktx:${Version.immersionbar_version}"
 }
 
 

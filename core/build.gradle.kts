@@ -47,4 +47,5 @@ dependencies {
     api(project(mapOf("path" to ":base_permission")))
     api(project(mapOf("path" to ":base_network")))
     api(project(mapOf("path" to ":base_img")))
+    api(project(mapOf("path" to ":base_ui")))
 }
